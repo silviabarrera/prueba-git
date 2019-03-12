@@ -1,0 +1,25 @@
+<!-- <p>
+  navbar works!
+</p> -->
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+  <div class="container">
+    <a href="#"><img class="main-navbar-logo" src="../../assets/armos-logo-nombre.jpg"></a>
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()" aria-controls="bc-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i> Menu
+    </button>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }" id="bc-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Quienes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">Mision</a>
+        </li>
+        <li class="nav-item cta">
+          <a href="#contacto" target="_blank" class="nav-link"><span>Beca</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
